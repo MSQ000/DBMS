@@ -37,4 +37,3 @@ mysql> create procedure fetch_employee_data()
 -> -- close the cursor
 -> close emp_cursor;
 -> end//
-Query OK, 0 rows affected (0.01 sec)
