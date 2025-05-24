@@ -5,8 +5,10 @@ begin
     declare n_birth_date date;
 
     declare done int default false;
+
     declare n_cursor cursor for 
     select student_id, student_name, birth_date from N_rollcall;
+
     declare continue handler for not found
     set done=true;
 
