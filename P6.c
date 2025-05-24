@@ -10,8 +10,10 @@ begin
     set done=true;
 
     open n_cursor;
+
     cursor_loop:Loop
     fetch n_cursor into n_id, n_name, n_birth_date;
+
     if done then leave cursor_loop;
     end if;
     if not exists(
