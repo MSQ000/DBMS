@@ -3,6 +3,7 @@ begin
     declare n_id int;
     declare n_name varchar(255);
     declare n_birth_date date;
+
     declare done int default false;
     declare n_cursor cursor for 
     select student_id, student_name, birth_date from N_rollcall;
